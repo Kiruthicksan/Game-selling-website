@@ -1,0 +1,419 @@
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(16,16,20);
+    color: white;
+}
+
+.main{
+    background-color: rgb(24,24,28);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.main .logo{
+    width: 20%;
+    align-items: center;
+}
+
+.main .logo img{
+    width: 20%;
+    align-items: center;
+    
+}
+
+
+.main .menu{
+   position: absolute;
+   left: 10%;
+}
+
+.main ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.main ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.main ul .store{
+    font-size: 1.5rem; 
+    text-transform: uppercase;
+    font-weight: 700;
+    align-items: center;
+}
+
+.main ul a:hover{
+    color: #979393;
+}
+
+.main .user-profile{
+    display: flex;
+    gap: 10px;
+}
+
+.user-profile button{
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.user-profile .first{
+    background-color: #ffffff26;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.user-profile .first:hover{
+   background-color: #ffffff50;
+}
+
+.user-profile .second{
+    background-color: #26bbff;
+    transition: background-color 0.3s ease;
+} 
+
+.user-profile .second:hover{
+    background-color: #77e0ff;
+}
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px 20px;
+    
+}
+
+.secondary-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(16,16,20);
+    
+}
+
+.secondary-navbar .search-bar{
+    display: flex;
+    align-items: center;
+    background-color: #202024;
+    padding:  12px 10px;
+    border-radius: 50px;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.secondary-navbar .search-bar:hover{
+    background-color: #ffffff30;
+}
+
+.secondary-navbar input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 0 10px;
+    
+}
+
+.secondary-navbar input::placeholder{
+    color: #979393;
+}
+
+.secondary-navbar i{
+    color: #979393;
+    margin-right: 10px;
+}
+
+.secondary-navbar .links{
+    position: absolute;
+    left: 30%;
+}
+
+.secondary-navbar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.secondary-navbar ul a{
+    color: #979393;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.secondary-navbar ul a:hover{
+    color: white;
+}
+
+.hero-section{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+}
+
+.hero-section img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-section .hero-text{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    max-width: 40%;
+    
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.hero-section .status{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero-section .desc{
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.hero-section .price{
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.hero-section button{
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.buy{
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.wishlist{
+    background: transparent;color: white;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.wishlist:hover{
+    background-color: red;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgb(24, 24, 28);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #979393;
+    margin-bottom: 12px;
+}
+
+.card .buy {
+    background-color: #26bbff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 10px;
+}
+
+.card .buy:hover {
+    background-color: #1aa3d1;
+}
+
+.card .wishlist {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card .wishlist:hover {
+    background-color: red;
+    border-color: red;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+footer {
+    background-color: rgb(24, 24, 28);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    color: white;
+}
+
+.footer-logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer-links a {
+    color: #979393;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #26bbff;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #979393;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .main .logo img {
+        width: 80px;
+    }
+
+    .main .menu {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .main ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .user-profile {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .user-profile button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .secondary-navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .secondary-navbar .search-bar {
+        width: 90%;
+    }
+
+    .secondary-navbar .links {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .hero
+}
